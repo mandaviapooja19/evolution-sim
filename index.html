@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Peppered Moth Evolution</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #eee;
+      text-align: center;
+    }
+
+    #controls {
+      margin-top: 10px;
+    }
+
+    canvas {
+      border: 2px solid #333;
+      display: block;
+      margin: 0 auto;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Peppered Moth Evolution</h1>
+  <p>Adjust tree color to see which moths survive better!</p>
+
+  <div id="controls">
+    <label for="bgSlider">Tree Color: </label>
+    <input type="range" id="bgSlider" min="0" max="255" value="200">
+  </div>
+
+  <canvas id="mothCanvas" width="600" height="400"></canvas>
+  <canvas id="graphCanvas" width="600" height="200" style="margin-top: 20px; border: 1px solid #999;"></canvas>
+  <button id="resetBtn" style="margin-top: 15px; padding: 10px 20px; font-size: 16px;">
+    Reset Simulation
+  </button>
+  <button id="predatorBtn" style="margin-top: 10px; padding: 10px 20px; font-size: 16px;">
+    Toggle Predator Mode: OFF
+  </button>
+  <div id="timer" style="font-size: 20px; margin-top: 10px;">Time Left: 30s</div>
+  <script src="script.js"></script>
+
+</body>
+</html>
+
